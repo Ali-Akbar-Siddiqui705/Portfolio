@@ -391,12 +391,12 @@ nav {
 }
 @media (max-width: 600px) {
     .info-list li {
-        flex-direction: column;
+        flex-direction: row;   /* 🔥 column hata ke row kar diya */
+        align-items: flex-start;
     }
 
     .info-list li strong {
-        width: auto;
-        margin-bottom: 2px;
+        width: 120px; /* same width rakho for alignment */
     }
 }
 
