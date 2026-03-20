@@ -375,27 +375,24 @@ nav {
 .info-list {
     list-style: none;
     margin-bottom: 30px;
+    padding: 0;
 }
 
 .info-list li {
     display: grid;
-    grid-template-columns: 120px 1fr;
-    gap: 10px;
-    margin-bottom: 12px;
+    grid-template-columns: 130px 1fr;
+    margin-bottom: 10px;
     align-items: center;
 }
 
 .info-list li strong {
     color: var(--accent-color);
-    font-weight: 600;
 }
-.info-list li span {
-    color: var(--accent-color);
-    font-weight: 600;
-}
-
-.info-list li p {
-    margin: 0;
+@media (max-width: 600px) {
+    .info-list li {
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
 }
 .about-buttons {
     display: flex;
@@ -432,16 +429,7 @@ nav {
     background: var(--accent-color);
     color: #fff;
 }
-@media (max-width: 600px) {
-    .info-list li {
-        grid-template-columns: 1fr;
-        gap: 3px;
-    }
 
-    .info-list li strong {
-        font-size: 0.9rem;
-    }
-}
 /* Education & Skills Section */
 .dark-section {
     background: var(--bg-tertiary);

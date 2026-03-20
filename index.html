@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-
+ 
 </head>
 
 <body data-theme="dark">
@@ -32,8 +32,7 @@
         <i class="fas fa-moon"></i>
       </button>
       <!-- Bootstrap Off-Canvas Toggle Button -->
-      <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar">
+      <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <i class="fas fa-bars"></i>
       </button>
     </div>
@@ -73,8 +72,8 @@
     </div>
   </section>
 
-  <section class="about-section" id="about">
-    <div class="about-left">
+  <section class="about-section" id="about" >
+    <div class="about-left" >
       <img src="img/1-removebg-preview.png" alt="Wilkerson Hardin" />
     </div>
     <div class="about-right">
@@ -83,18 +82,10 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua.</p>
       <ul class="info-list">
-        <li><span>Name:</span>
-          <p>Wilkerson Hardin</p>
-        </li>
-        <li><span>Birthday:</span>
-          <p>14 August, 1990</p>
-        </li>
-        <li><span>Location:</span>
-          <p>London, UK</p>
-        </li>
-        <li><span>Email:</span>
-          <p>hello@sample.com</p>
-        </li>
+        <li><strong>Name:</strong> Wilkerson Hardin</li>
+        <li><strong>Birthday:</strong> 14 August, 1990</li>
+        <li><strong>Location:</strong> London, UK</li>
+        <li><strong>Email:</strong> hello@sample.com</li>
       </ul>
       <div class="about-buttons">
         <a href="#" class="btn-cv">Download CV</a>
@@ -281,36 +272,36 @@
         </div>
       </div>
 
-      <div class="contact-form">
-        <form id="contactForm">
-          <div class="form-row">
-            <div class="form-group half">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" class="form-control" placeholder="Your Name " required>
-            </div>
-
-            <div class="form-group half">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" class="form-control " placeholder="Your Email" required>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" class="form-control" placeholder="Project Collaboration" required>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea id="message" class="form-control" placeholder="Tell me about your project..." required></textarea>
-          </div>
-
-          <button type="submit" class="submit-btn">Send Message</button>
-
-          <!-- Success Message -->
-          <p id="successMessage" style="display:none; color:lime; margin-top:10px;">✅ Message sent successfully!</p>
-        </form>
+    <div class="contact-form">
+  <form id="contactForm">
+    <div class="form-row">
+      <div class="form-group half">
+        <label for="name" >Full Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Your Name " required>
       </div>
+
+      <div class="form-group half">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" class="form-control " placeholder="Your Email" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" class="form-control" placeholder="Project Collaboration" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Your Message</label>
+      <textarea id="message" class="form-control" placeholder="Tell me about your project..." required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Send Message</button>
+
+    <!-- Success Message -->
+    <p id="successMessage" style="display:none; color:lime; margin-top:10px;">✅ Message sent successfully!</p>
+  </form>
+</div>
     </div>
   </section>
   <!-- Footer -->
@@ -321,7 +312,7 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js">
-
+   
 
   </script>
 
