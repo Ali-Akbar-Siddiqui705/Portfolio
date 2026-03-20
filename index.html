@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wilkerson Hardin | Developer Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body data-theme="dark">
+
+  <nav>
+    <div class="logo">ALI<span>TECH WORK</span></div>
+
+    <!-- Desktop Navigation -->
+    <ul class="nav-links d-none d-lg-flex">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skill">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-controls">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
+      <!-- Bootstrap Off-Canvas Toggle Button -->
+      <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Bootstrap Off-Canvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- Bootstrap Nav in Off-Canvas -->
+        <nav class="navbar-nav">
+          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#skill">Skills</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-left">
+      <p class="first-text">Get Ready To Start Work.</p>
+      <h1>I'm <span>Developer</span><br>Wilkerson Hardin</h1>
+      <p class="subtext">I'm one of Britain's most iconic fashion brands, with stores located in cities all over the
+        world. To help make their online experience as slick as the physical.</p>
+      <div class="hero-buttons">
+        <button class="btn-primary">Learn More</button>
+        <button class="btn-secondary">Play Video</button>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="img/banner img.png" alt="Developer Photo" />
+    </div>
+  </section>
+
+  <section class="about-section" id="about" >
+    <div class="about-left" >
+      <img src="img/1-removebg-preview.png" alt="Wilkerson Hardin" />
+    </div>
+    <div class="about-right">
+      <h2>Why hire me for your next project?</h2>
+      <h3>UI/UX Designer & Web Developer</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.</p>
+      <ul class="info-list">
+        <li><strong>Name:</strong> Wilkerson Hardin</li>
+        <li><strong>Birthday:</strong> 14 August, 1990</li>
+        <li><strong>Location:</strong> London, UK</li>
+        <li><strong>Email:</strong> hello@sample.com</li>
+      </ul>
+      <div class="about-buttons">
+        <a href="#" class="btn-cv">Download CV</a>
+        <a href="#" class="btn-learn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark-section" id="skill">
+    <div class="dark-wrap">
+
+      <div class="edu">
+        <h2>My Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <small>2014 - 2018</small>
+            <strong>Diploma Development</strong>
+            <p>The portfolio that recognizes the talent and effort of the best web designers, developers, and agencies
+              in the world.</p>
+          </div>
+
+          <div class="timeline-item">
+            <small>2009 - 2013</small>
+            <strong>Computer Science</strong>
+            <p>Focused on algorithms, data structures, and front-end fundamentals used in interface design.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills">
+        <h2>My Skills</h2>
+
+        <div class="skill-item">
+          <div class="skill-label"><span>HTML5</span><span>90%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="90%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-label"><span>CSS3</span><span>65%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="65%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-label"><span>JavaScript (ES6+)</span><span>75%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="75%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-label"><span>Bootstrap</span><span>80%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="80%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-label"><span>Responsive Design</span><span>60%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="60%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section" id="projects">
+    <div class="section-header">
+      <h2>My Projects</h2>
+      <p>Here are some of my recent works that showcase my skills and expertise</p>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card" data-category="web">
+        <div class="project-img"><img src="img/original-44b778f7ac20a54c6911891 (1).png" alt=""></div>
+        <div class="project-content">
+          <h3>E-Commerce Website</h3>
+          <p>A fully responsive e-commerce platform with product filtering, cart functionality, and secure checkout.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Bootstrap</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="ui">
+        <div class="project-img"><img src="img/original-b39e6480690cb9a5d711c5d.png" alt=""></div>
+        <div class="project-content">
+          <h3>Finance Dashboard</h3>
+          <p>User-friendly financial dashboard with data visualization, analytics, and reporting features.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Bootstrap</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="app">
+        <div class="project-img"><img src="img/original-bc1cd136326f2a0939206da.png" alt=""></div>
+        <div class="project-content">
+          <h3>Fitness Tracker App</h3>
+          <p>Mobile application for tracking workouts, nutrition, and progress with social sharing features.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Bootstrap</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+
+  </section>
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="section-header">
+      <h2>Get In Touch</h2>
+      <p>Feel free to reach out for collaborations or just a friendly hello</p>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Let's Connect</h3>
+        <p>I'm always open to discussing new opportunities, creative ideas or possibilities to be part of your vision.
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Location</h4>
+              <p>London, United Kingdom</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Email</h4>
+              <p>aliakbersiddiqi4@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Phone</h4>
+              <p>03190427750</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+        </div>
+      </div>
+
+    <div class="contact-form">
+  <form id="contactForm">
+    <div class="form-row">
+      <div class="form-group half">
+        <label for="name" >Full Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Your Name " required>
+      </div>
+
+      <div class="form-group half">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" class="form-control " placeholder="Your Email" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" class="form-control" placeholder="Project Collaboration" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Your Message</label>
+      <textarea id="message" class="form-control" placeholder="Tell me about your project..." required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Send Message</button>
+
+    <!-- Success Message -->
+    <p id="successMessage" style="display:none; color:lime; margin-top:10px;">✅ Message sent successfully!</p>
+  </form>
+</div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2023 Wilkerson Hardin. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js">
+   
+
+  </script>
+
+</body>
+
+</html>
