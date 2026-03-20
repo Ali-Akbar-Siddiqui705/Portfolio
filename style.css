@@ -374,26 +374,32 @@ nav {
 
 .info-list {
     list-style: none;
-    margin-bottom: 30px;
     padding: 0;
+    margin-bottom: 30px;
 }
 
 .info-list li {
-    display: grid;
-    grid-template-columns: 130px 1fr;
-    margin-bottom: 10px;
-    align-items: center;
+    display: flex;
+    margin-bottom: 12px;
+    font-size: 16px;
 }
 
 .info-list li strong {
-    color: var(--accent-color);
+    width: 120px;   /* 🔥 alignment ka secret */
+    color: #e63946; /* tumhara red */
+    flex-shrink: 0;
 }
 @media (max-width: 600px) {
     .info-list li {
-        grid-template-columns: 1fr;
-        gap: 3px;
+        flex-direction: column;
+    }
+
+    .info-list li strong {
+        width: auto;
+        margin-bottom: 2px;
     }
 }
+
 .about-buttons {
     display: flex;
     gap: 20px;
