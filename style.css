@@ -393,45 +393,64 @@ nav {
     flex-shrink: 0;
 }
 @media (max-width: 600px) {
-  
+    /* Pure section ko center karne ke liye */
     .about-right {
-        padding: 0 15px;
+        padding: 0 20px;
+        text-align: center; 
+    }
+
+    /* Headings aur Paragraph ko center align rakhein */
+    .about-right h2, 
+    .about-right h3, 
+    .about-right p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* List items ko center karne ka sahi tareeka */
+    .info-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Items ko horizontally center karega */
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .info-list li {
+        display: flex;
+        flex-direction: column; /* Label upar, Value niche */
+        align-items: center;    /* Text ko center mein rakhega */
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .info-list li strong {
+        width: auto;           /* Fixed width hata di */
+        margin-bottom: 2px;
         text-align: center;
     }
 
-   
-    .info-list li {
-        justify-content: flex-start;
-        text-align: left; 
-        font-size: 14px; 
-        flex-wrap: wrap; 
+    /* Email ka fix: Lambi email ko center mein wrap karega */
+    .info-list li span, 
+    .info-list li a {
+        word-break: break-all; 
+        text-align: center;
+        display: block;
+        width: 100%;
+        max-width: 280px; /* Email ko ek had tak mahdood rakhega */
     }
 
-    .info-list li strong {
-        width: 100px; 
-    }
-
-   
+    /* Buttons ko center align rakhein */
     .about-buttons {
         justify-content: center;
-        gap: 10px;
+        flex-direction: column;
+        align-items: center;
     }
-    
+
     .about-buttons a {
         width: 100%;
-        max-width: 250px;
-        padding: 10px 20px;
-    }
-}
-@media (max-width: 480px) {
-    .info-list li {
-        flex-direction: column; /* Label upar, value niche */
-        gap: 2px;
-    }
-    
-    .info-list li strong {
-        width: auto; /* Fixed width khatam */
-        margin-bottom: 2px;
+        max-width: 260px;
     }
 }
 
