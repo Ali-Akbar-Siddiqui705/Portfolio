@@ -296,6 +296,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
 }
 
 .btn-secondary:hover {
@@ -392,13 +393,45 @@ nav {
     flex-shrink: 0;
 }
 @media (max-width: 600px) {
+  
+    .about-right {
+        padding: 0 15px;
+        text-align: center;
+    }
+
+   
     .info-list li {
-        flex-direction: row;   /* 🔥 column hata ke row kar diya */
-        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left; 
+        font-size: 14px; 
+        flex-wrap: wrap; 
     }
 
     .info-list li strong {
-        width: 120px; /* same width rakho for alignment */
+        width: 100px; 
+    }
+
+   
+    .about-buttons {
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .about-buttons a {
+        width: 100%;
+        max-width: 250px;
+        padding: 10px 20px;
+    }
+}
+@media (max-width: 480px) {
+    .info-list li {
+        flex-direction: column; /* Label upar, value niche */
+        gap: 2px;
+    }
+    
+    .info-list li strong {
+        width: auto; /* Fixed width khatam */
+        margin-bottom: 2px;
     }
 }
 
