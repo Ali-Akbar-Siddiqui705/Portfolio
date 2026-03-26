@@ -453,6 +453,46 @@ nav {
         max-width: 260px;
     }
 }
+/* Special fix for very small screens (340px and below) */
+@media (max-width: 340px) {
+    .about-right {
+        padding: 0 10px; /* Side padding mazeed kam kar di */
+    }
+
+    .about-right h2 {
+        font-size: 1.8rem; /* Heading thori choti */
+    }
+
+    .about-right h3 {
+        font-size: 1.2rem; /* Sub-heading choti */
+    }
+
+    .about-right p {
+        font-size: 0.9rem; /* Paragraph text chota */
+        line-height: 1.4;
+    }
+
+    .info-list li {
+        font-size: 13px; /* List text mazeed chota */
+        gap: 0;
+    }
+
+    /* Email ko forcefully wrap karne ke liye */
+    .info-list li span, 
+    .info-list li a {
+        word-break: break-all; 
+        font-size: 12px;
+        display: block;
+        width: 100%;
+        max-width: 100%; /* Pure container ki width use kare */
+    }
+
+    .about-buttons a {
+        padding: 10px 15px; /* Buttons ka size mazeed compress kiya */
+        font-size: 14px;
+        max-width: 220px;
+    }
+}
 
 .about-buttons {
     display: flex;
